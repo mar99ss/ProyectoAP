@@ -1,38 +1,125 @@
-.App {
-  text-align: center;
+ 
+.row-content {
+  border-bottom: 0px ridge;
+  color: floralwhite;
+  line-height: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.line-left::before {
+  content: ' ';
+  height: 100%;
+  background-color: seashell;
+  width: 2px;
+  position: absolute;
+  top: 0;
+  left: -1.5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.row-content img {
+  height: 100%;
+  width: 100%;
+}
+
+.row-body {
+  margin: 0px auto;
+  border-bottom: 0px ridge;
+  color: floralwhite;
   }
+
+.footer{
+  background-color: #D1C4E9;
+  margin:0px auto;
+  padding: 20px 0px 20px 0px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.jumbotron {
+  padding:70px 30px 70px 30px;
+  margin:0px auto;
+  background: #9575CD ;
+  color:floralwhite;
+}
+
+address{
+  font-size:80%;
+  margin:0px;
+  color:#0f0f0f;
+}
+
+.input-control {
+  
+  background-color: transparent;
+  color:white;
+  text-emphasis-color: white;
+  border:none ;
+  border-bottom:  2px solid;
+  outline:none; 
+  height: auto; 
+  width: 200%;
+}
+
+::placeholder{
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* TODO:
+  Cambiar pixeles por flex o por unidades relativas
+ */
+.btn-S{ 
+  width: 100%;
+  height: 75%; 
+  background: linear-gradient(180deg, #696D71 0%, #3F3E3E 100%), #3F3E3E;
+  border-radius: 75% ;
+  font-size: 75% !important;
+  color: #FFFFFF;
+  
+}
+.title {
+  
+  font-size:4vw
+}
+.navbar-dark {
+  background-color: #010737;
+  color: white;
+} 
+
+.nav-text{
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  width: 95%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  border-radius: 4px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  min-height: 100vh !important;
+  z-index: 100;
+  padding: 48px 0 0;
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
 }
+#sidebar-wrapper{
+  min-height: 100vh !important;
+  width: 100vw;
+  margin-left: -1rem;
+  -webkit-transition: margin .25s ease-out;
+  -moz-transition: margin .25s ease-out;
+  -o-transition: margin .25s ease-out;
+  transition: margin .25s ease-out;
+}
+#sidebar-wrapper .sidebar-heading {
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+}
+
+#page-content-wrapper {
+  min-width: 0;
+  width: 100%;
+}
+ 
