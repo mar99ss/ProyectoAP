@@ -63,7 +63,7 @@ const getColor = () => {
   return "#" + r + g + b;
 };
 
-export default class Categorias extends Component {
+export default class Cursos extends Component {
   cardList = [
     {
       title: "Hola",
