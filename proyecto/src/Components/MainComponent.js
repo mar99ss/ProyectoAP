@@ -1,8 +1,9 @@
 import React, { Component } from "react";
-import { Switch, Route, Redirect, withRouter } from "react-router-dom";
+import { Switch, Route, Redirect, withRouter, Router } from "react-router-dom";
 import Home from "./HomeComponent";
 import Login from "./LoginComponent";
 import Header from "./HeaderComponent";
+import history from './History'
 
 class Main extends Component {
   render() {
@@ -21,11 +22,13 @@ class Main extends Component {
 
     return (
       <div>
-        <Switch>
-          <Route path="/home" component={HomePage} />
-          <Route path="/login" component={LoginPage} />
-          <Redirect to="/login" />
-        </Switch>
+        <Router history={history}>
+          <Switch>
+            <Route path="/home" component={HomePage} />
+            <Route path="/login" component={LoginPage} />
+            <Redirect to="/login" />
+          </Switch>
+        </Router>
       </div>
     );
   }
