@@ -43,15 +43,15 @@ export default class Login extends Component {
   };
 
   onSubmit = async e => {
-   /* e.preventDefault();
-    const hash = md5(this.state.password);
+    e.preventDefault();
+    /*const hash = md5(this.state.password);
     const newNote = {
       emailAddress: this.state.emailAddress,
       password: hash
     };
     axios.post("http://localhost:3000/auth/login", newNote);
-
-    window.location.href = "/home";*/
+    */
+    window.location.href = "/home";
   };
 
   onChangePass = async e => { 
@@ -128,7 +128,7 @@ export default class Login extends Component {
                       </Button>
                   </div>
                   <div className="col-4 col-md-4 col-xl-4 ">
-                    <Button type="submit" value="submit" className="btn btn-S ">
+                    <Button onClick={this.onSubmit} type="submit" value="submit" className="btn btn-S ">
                       Acceder
                     </Button>
                   </div>
