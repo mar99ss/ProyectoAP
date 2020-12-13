@@ -1,17 +1,16 @@
-import React, { Component } from 'react';
-import { Switch, Route, Redirect, withRouter } from 'react-router-dom'; 
-import Home from './HomeComponent';   
-import Login from './LoginComponent'; 
+import Header from "./HeaderComponent";
 import UserInformation from './UserInformationComponent';
 import ListaTutoria from './ListaTutoriasComponent';
 class Main extends Component {
- 
   render() {
     const HomePage = () => {
-      return(
+      return (
+        <div>
+          <Header />
           <Home />
+        </div>
       );
-    } 
+    };
 
     const LoginPage = () => {
         return(
@@ -43,4 +42,4 @@ class Main extends Component {
   }
 }
 
-export default withRouter((Main));
+export default withRouter(Main);
