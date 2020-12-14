@@ -8,6 +8,7 @@ import {
 } from "reactstrap";
 
 const textStyle = {
+  fontSize: 32,
   textAlign:'center'
 }
 
@@ -66,26 +67,16 @@ const getColor = () => {
 export default class Categorias extends Component {
   cardList = [
     {
-      title: "Hola",
-      text: "Adios",
-    },
-    {
-      title: "Holis",
-      text: "Bye",
-    },
-    
-    {
       title: "Programación",
-      text: "Programacion",
     },
     {
-      title: "Holis",
+      title: "Matematicas",
     },
     {
-      title: "Holis",
+      title: "Lenguajes",
     },
     {
-      title: "Holis",
+      title: "Artes",
     }
   ];
 
