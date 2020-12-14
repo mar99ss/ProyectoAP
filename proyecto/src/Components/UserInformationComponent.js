@@ -60,7 +60,7 @@ export default class UserInformation extends Component {
         return(
             <div className="m-auto w-75" style={{ zIndex: 2 }}>
                 <div class= "row">
-                    <div class="col-4 card"style={{backgroundColor:getColor()}}>
+                    <div class="col-4 card"style={{borderRadius: 25,backgroundColor:getColor()}}>
                         <div class="card-body ">
                             <div class="row  d-flex align-items-center justify-content-center">
                                 <img src= {foto} height="130" width="130"  />
@@ -97,12 +97,12 @@ export default class UserInformation extends Component {
                             <label for="misTutorias">Mis tutorías</label>
                         </div>
                         <div >
-                            <div class="mx-7 card" style={{backgroundColor:getColor()}}>
+                            <div class="mx-7 card" style={{borderRadius: 25,backgroundColor:getColor()}}>
                                 <div class ="row d-flex align-items-center justify-content-center">
                                     <label for="modeloCascada">Modelo Cascada</label>
                                 </div>
                                 <div class ="row  d-flex align-items-center justify-content-center" >
-                                    <div class="card-body mx-5 my-2" style={{backgroundColor: "#FFFFFF"}}>
+                                    <div class="card-body mx-5 my-2" style={{borderRadius: 25,backgroundColor: "#FFFFFF"}}>
                                         <img src= {foto} height="30" width="30"  />   
                                         <label for="Jane Foster" >Jane Foster</label>
                                     </div>
