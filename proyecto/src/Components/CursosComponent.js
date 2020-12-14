@@ -107,7 +107,7 @@ export default class Cursos extends Component {
     return (
       <div class="container">
         <br />
-        <h1>Categorias</h1>
+        <h1>Cursos</h1>
         <CardColumns>
           {this.cardList.map(this.renderCard)}
         </CardColumns>

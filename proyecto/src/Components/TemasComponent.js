@@ -107,7 +107,7 @@ export default class Temas extends Component {
     return (
       <div class="container">
         <br />
-        <h1>Categorias</h1>
+        <h1>Temas</h1>
         <CardColumns>
           {this.cardList.map(this.renderCard)}
         </CardColumns>
