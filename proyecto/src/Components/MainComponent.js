@@ -8,7 +8,9 @@ import Programacion from "./CursosProgramacionComponent";
 import Artes from "./CursosArtesComponents";
 import Lenguajes from "./CursosLenguajesComponent";
 import Matematicas from "./CursosMatematicasComponents";
-import history from './History'
+import UserInformation from "./UserInformationComponent";
+import ListaTutoria from "./ListaTutoriasPooComponent";
+import history from './History';
 
 class Main extends Component {
   render() {
@@ -93,8 +95,17 @@ class Main extends Component {
           <Switch>
             <Route path="/home" component={HomePage} />
             <Route path="/login" component={LoginPage} />
+            <Route path="/listatutoria" component={ListaTutoriaPage} />
+            <Route path="/userinformation" component={UserInformationPage} />
             <Route path="/Categorias" component={CategoriasPage} />
             <Route path="/Programacion" component={CursosProgramacion} />
+            <Route path="/Artes" component={CursosArtes} />
+            <Route path="/Lenguajes" component={CursosLenguajes} />
+            <Route path="/Matematicas" component={CursosMatematicas} />
+            
+            <Route path="/Artes" component={CursosArtes} />
+            <Route path="/Lenguajes" component={CursosLenguajes} />
+            <Route path="/Matematicas" component={CursosMatematicas} />
             <Route path="/Artes" component={CursosArtes} />
             <Route path="/Lenguajes" component={CursosLenguajes} />
             <Route path="/Matematicas" component={CursosMatematicas} />
