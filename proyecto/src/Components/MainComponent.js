@@ -22,8 +22,26 @@ class Main extends Component {
     };
 
     const LoginPage = () => {
-      return <Login />;
-    };
+        return(
+            <Login />
+        );
+      } 
+    const UserInformationPage = () => {
+      return(
+        <div>
+          <Header />
+          <UserInformation/>
+        </div>
+      );
+    } 
+    const ListaTutoriaPage = () => {
+      return(
+          <div>
+            <Header/>
+            <ListaTutoria/>
+          </div>
+      );
+    } 
 
     const CategoriasPage = () => {
       return (
