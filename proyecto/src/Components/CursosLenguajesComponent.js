@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import history from './History'
 
 import {
   Card,
@@ -66,33 +67,17 @@ const getColor = () => {
 export default class Cursos extends Component {
   cardList = [
     {
-      title: "Hola",
-      text: "Adios",
+      title: "Ingles",
     },
     {
-      title: "Holis",
-      text: "Bye",
+      title: "Aleman",
     },
-    
-    {
-      title: "Programación",
-      text: "Programacion",
-    },
-    {
-      title: "Holis",
-    },
-    {
-      title: "Holis",
-    },
-    {
-      title: "Holis",
-    }
   ];
 
   renderCard = (card, index) => {
     return (
       <Card
-        onClick={() => console.log(index)}
+        onClick={() => history.push('/Temas')}
         body
         style={{borderRadius: 25,backgroundColor: getColor(), border: 0}}
         key={index}

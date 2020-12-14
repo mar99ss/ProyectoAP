@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import history from './History'
 
 import {
   Card,
@@ -63,36 +64,20 @@ const getColor = () => {
   return "#" + r + g + b;
 };
 
-export default class Temas extends Component {
+export default class Cursos extends Component {
   cardList = [
     {
-      title: "Hola",
-      text: "Adios",
+      title: "POO",
     },
     {
-      title: "Holis",
-      text: "Bye",
+      title: "Estructuras de datos",
     },
-    
-    {
-      title: "Programación",
-      text: "Programacion",
-    },
-    {
-      title: "Holis",
-    },
-    {
-      title: "Holis",
-    },
-    {
-      title: "Holis",
-    }
   ];
 
   renderCard = (card, index) => {
     return (
       <Card
-        onClick={() => console.log(index)}
+        onClick={() => history.push('/Temas')}
         body
         style={{borderRadius: 25,backgroundColor: getColor(), border: 0}}
         key={index}
@@ -107,7 +92,7 @@ export default class Temas extends Component {
     return (
       <div class="container">
         <br />
-        <h1>Temas</h1>
+        <h1>Cursos</h1>
         <CardColumns>
           {this.cardList.map(this.renderCard)}
         </CardColumns>

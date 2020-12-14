@@ -9,7 +9,6 @@ import {
 } from "reactstrap";
 
 const textStyle = {
-  fontSize: 32,
   textAlign:'center'
 }
 
@@ -65,26 +64,20 @@ const getColor = () => {
   return "#" + r + g + b;
 };
 
-export default class Categorias extends Component {
+export default class Cursos extends Component {
   cardList = [
     {
-      title: "Programacion",
+      title: "Pintura",
     },
     {
-      title: "Matematicas",
+      title: "origami",
     },
-    {
-      title: "Lenguajes",
-    },
-    {
-      title: "Artes",
-    }
   ];
 
   renderCard = (card, index) => {
     return (
       <Card
-        onClick={() => history.push('/'+card.title)}
+        onClick={() => history.push('/Temas')}
         body
         style={{borderRadius: 25,backgroundColor: getColor(), border: 0}}
         key={index}
@@ -99,7 +92,7 @@ export default class Categorias extends Component {
     return (
       <div class="container">
         <br />
-        <h1>Categorias</h1>
+        <h1>Cursos</h1>
         <CardColumns>
           {this.cardList.map(this.renderCard)}
         </CardColumns>

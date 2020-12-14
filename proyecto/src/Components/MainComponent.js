@@ -4,8 +4,10 @@ import Home from "./HomeComponent";
 import Login from "./LoginComponent";
 import Header from "./HeaderComponent";
 import Categorias from "./CategoriasComponent";
-import Cursos from "./CursosComponent";
-import Temas from "./TemasComponent";
+import Programacion from "./CursosProgramacionComponent";
+import Artes from "./CursosArtesComponents";
+import Lenguajes from "./CursosLenguajesComponent";
+import Matematicas from "./CursosMatematicasComponents";
 import history from './History'
 
 class Main extends Component {
@@ -31,33 +33,57 @@ class Main extends Component {
         </div>
       );  
     };
-    const CursosPage = () => {
+    const CursosProgramacion = () => {
       return (
         <div> 
             <Header/>
-            <Cursos />
-        </div>
-      );  
-    };
-    const TemasPage = () => {
-      return (
-        <div> 
-            <Header/>
-            <Temas />
+            <Programacion />
         </div>
       );  
     };
 
+    const CursosArtes = () => {
+      return (
+        <div> 
+            <Header/>
+            <Artes />
+        </div>
+      );  
+    };
+    const CursosLenguajes = () => {
+      return (
+        <div> 
+            <Header/>
+            <Lenguajes />
+        </div>
+      );  
+    };
+    const CursosMatematicas = () => {
+      return (
+        <div> 
+            <Header/>
+            <Matematicas />
+        </div>
+      );  
+    };
+
+
+
     return (
       <div>
-        <Switch>
-          <Route path="/home" component={HomePage} />
-          <Route path="/login" component={LoginPage} />
-          <Route path="/Categorias" component={CategoriasPage} />
-          <Route path="/Cursos" component={CursosPage} />
-          <Route path="/Temas" component={TemasPage} />
-          <Redirect to="/login" />
-        </Switch>
+        <Router history = {history}> 
+          <Switch>
+            <Route path="/home" component={HomePage} />
+            <Route path="/login" component={LoginPage} />
+            <Route path="/Categorias" component={CategoriasPage} />
+            <Route path="/Programacion" component={CursosProgramacion} />
+            <Route path="/Artes" component={CursosArtes} />
+            <Route path="/Lenguajes" component={CursosLenguajes} />
+            <Route path="/Matematicas" component={CursosMatematicas} />
+            <Redirect to="/login" />
+          </Switch>
+        </Router>
+        
       </div>
     );
   }
