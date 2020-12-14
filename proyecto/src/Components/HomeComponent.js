@@ -136,7 +136,7 @@ export default class Home extends Component {
   renderCard = (card, index) => {
     return (
       <Card
-        onClick={() => history.push(card.title)}
+        onClick={() => history.push('/'+card.title)}
         body
         style={{borderRadius: 25, backgroundColor: getColor(), border: 0}}
         key={index}
