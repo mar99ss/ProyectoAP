@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import history from './History'
 import {
   Card,
   CardTitle,
@@ -87,9 +87,9 @@ export default class Home extends Component {
   renderCard = (card, index) => {
     return (
       <Card
-        onClick={() => console.log(index)}
+        onClick={() => history.push('/login')}
         body
-        style={{borderRadius: 25,backgroundColor: getColor(), border: 0}}
+        style={{borderRadius: 25, backgroundColor: getColor(), border: 0}}
         key={index}
       >
         <CardTitle style={textStyle} tag="h5">{card.title}</CardTitle>

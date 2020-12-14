@@ -1,11 +1,12 @@
 import React, { Component } from "react";
-import { Switch, Route, Redirect, withRouter } from "react-router-dom";
+import { Switch, Route, Redirect, withRouter, Router } from "react-router-dom";
 import Home from "./HomeComponent";
 import Login from "./LoginComponent";
 import Header from "./HeaderComponent";
 import Categorias from "./CategoriasComponent";
 import Cursos from "./CursosComponent";
 import Temas from "./TemasComponent";
+import history from './History'
 
 class Main extends Component {
   render() {
