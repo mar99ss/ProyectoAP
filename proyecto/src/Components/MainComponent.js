@@ -10,6 +10,13 @@ import Lenguajes from "./CursosLenguajesComponent";
 import Matematicas from "./CursosMatematicasComponents";
 import UserInformation from "./UserInformationComponent";
 import ListaTutoria from "./ListaTutoriasPooComponent";
+import ListaTutoriaAleman from "./ListaTutoriasAlemanComponent";
+import ListaTutoriaEstadistica from "./ListaTutoriasEstadisticaComponent";
+import ListaTutoriaIngles from "./ListaTutoriasInglesComponent";
+import ListaTutoriaOrigami from "./ListaTutoriasOrigamiComponent";
+import ListaTutoriaPintura from "./ListaTutoriasPinturaComponent";
+import ListaTutoriaProb from "./ListaTutoriasProbabilidadComponent";
+import Tutoria from "./TutoriaComponent";
 import history from './History';
 
 class Main extends Component {
@@ -44,6 +51,66 @@ class Main extends Component {
           </div>
       );
     } 
+
+    const ListaTutoriaAlemanPage = () => {
+      return(
+          <div>
+            <Header/>
+            <ListaTutoriaAleman/>
+          </div>
+      );
+    } 
+    const ListaTutoriaEstadisticaPage = () => {
+      return(
+          <div>
+            <Header/>
+            <ListaTutoriaEstadistica/>
+          </div>
+      );
+    } 
+    const ListaTutoriaInglesPage = () => {
+      return(
+          <div>
+            <Header/>
+            <ListaTutoriaIngles/>
+          </div>
+      );
+    } 
+
+    const ListaTutoriaOrigamiPage = () => {
+      return(
+          <div>
+            <Header/>
+            <ListaTutoriaOrigami/>
+          </div>
+      );
+    } 
+
+    const ListaTutoriaPinturaPage = () => {
+      return(
+          <div>
+            <Header/>
+            <ListaTutoriaPintura/>
+          </div>
+      );
+    } 
+    const ListaTutoriaProbPage = () => {
+      return(
+          <div>
+            <Header/>
+            <ListaTutoriaProb/>
+          </div>
+      );
+    } 
+
+    const TutoriaPage=() => {
+      return(
+        <div>
+            <Header/>
+            <Tutoria/>
+        </div>
+      );
+    }
 
     const CategoriasPage = () => {
       return (
@@ -102,13 +169,13 @@ class Main extends Component {
             <Route path="/Artes" component={CursosArtes} />
             <Route path="/Lenguajes" component={CursosLenguajes} />
             <Route path="/Matematicas" component={CursosMatematicas} />
-            
-            <Route path="/Artes" component={CursosArtes} />
-            <Route path="/Lenguajes" component={CursosLenguajes} />
-            <Route path="/Matematicas" component={CursosMatematicas} />
-            <Route path="/Artes" component={CursosArtes} />
-            <Route path="/Lenguajes" component={CursosLenguajes} />
-            <Route path="/Matematicas" component={CursosMatematicas} />
+            <Route path="/listaTutoriaAleman" component={ListaTutoriaAlemanPage} />
+            <Route path="/listaTutoriaEstadistica" component={ListaTutoriaEstadisticaPage} />
+            <Route path="/listaTutoriaIngles" component={ListaTutoriaInglesPage} />
+            <Route path="/listaTutoriaOrigami" component={ListaTutoriaOrigamiPage} />
+            <Route path="/listaTutoriaPintura" component={ListaTutoriaPinturaPage} />
+            <Route path="/listaTutoriaProbabilidad" component={ListaTutoriaProbPage} />
+            <Route path="/tutoria" component={TutoriaPage} />
             <Redirect to="/login" />
           </Switch>
         </Router>
