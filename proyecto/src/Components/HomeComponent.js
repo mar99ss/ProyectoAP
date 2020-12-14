@@ -64,30 +64,79 @@ const getColor = () => {
 };
 
 export default class Home extends Component {
-  cardList = [
+  recientes = [
     {
-      title: "Holis",
-      text: "Cara de culo",
+      title: "Factorizar",
+      text: "Matemática General",
     },
     {
-      title: "Holis",
-      text: "Cara de culo",
+      title: "Tablas de verdad",
+      text: "Matemática Discreta",
     },
     
     {
-      title: "Holis",
-      text: "Cara de culo",
+      title: "Recursividad",
+      text: "Introducción a la Programación",
+    }
+  ];
+
+  matematicas = [
+    {
+      title: "Matemática General",
+      text: "",
     },
     {
-      title: "Holis",
-      text: "Cara de culo",
+      title: "Matemática Discreta",
+      text: "",
+    },
+    {
+      title: "Cálculo Diferencial e Integral",
+      text: "",
+    },
+    {
+      title: "Estadística",
+      text: "",
+    }
+  ];
+
+  programacion = [
+    {
+      title: "Introducción a la Programación",
+      text: "",
+    },
+    {
+      title: "Taller de Programación",
+      text: "",
+    },
+    {
+      title: "POO",
+      text: "",
+    },
+    {
+      title: "Análisis de Algoritmos",
+      text: "",
+    }
+  ];
+
+  guardados = [
+    {
+      title: "División sintética",
+      text: "Matemática General",
+    },
+    {
+      title: "Multiplicación de matrices",
+      text: "Matemática Discreta",
+    },
+    {
+      title: "Recursividad",
+      text: "Introducción a la Programación",
     }
   ];
 
   renderCard = (card, index) => {
     return (
       <Card
-        onClick={() => history.push('/login')}
+        onClick={() => history.push('/'+card.title)}
         body
         style={{borderRadius: 25, backgroundColor: getColor(), border: 0}}
         key={index}
@@ -104,26 +153,26 @@ export default class Home extends Component {
         <br />
         <h1>Recientes</h1>
         <CardColumns>
-          {this.cardList.map(this.renderCard)}
+          {this.recientes.map(this.renderCard)}
         </CardColumns>
         <br />
         <h1>Explorar</h1>
         <div class = 'container'>
           <h4>Matemáticas</h4>
           <CardColumns>
-            {this.cardList.map(this.renderCard)}
+            {this.matematicas.map(this.renderCard)}
           </CardColumns>
         </div>
         <div class = 'container'>
-          <h4>Química</h4>
+          <h4>Programación</h4>
           <CardColumns>
-            {this.cardList.map(this.renderCard)}
+            {this.programacion.map(this.renderCard)}
           </CardColumns>
         </div>
         <br />
         <h1>Guardados</h1>
         <CardColumns>
-          {this.cardList.map(this.renderCard)}
+          {this.guardados.map(this.renderCard)}
         </CardColumns>
       </div>
     );
