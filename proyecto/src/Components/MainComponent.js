@@ -236,7 +236,7 @@ class Main extends Component {
             <Route path="/listatutoria" component={ListaTutoriaPage} />
             <Route path="/userinformation" component={UserInformationPage} />
             <Route path="/Categorias" component={CategoriasPage} />
-            <Route path="/Programacion" component={CursosProgramacion} />
+            <Route path="/programacion" component={CursosProgramacion} />
             <Route path="/Artes" component={CursosArtes} />
             <Route path="/Lenguajes" component={CursosLenguajes} />
             <Route path="/Matematicas" component={CursosMatematicas} />

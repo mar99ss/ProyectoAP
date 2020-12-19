@@ -31,13 +31,13 @@ export default class Header extends Component {
         return(
           <div d-flex flex-row>
           <Navbar dark expand="md" style={backgroundNavbar}>
-                  <NavbarBrand className="mr-auto" href="/"><img src= {logo} height="65" width="200" alt='Logo tutorías a tu alcance' /></NavbarBrand>
+                  <NavbarBrand className="mr-auto" href="/home"><img src= {logo} height="65" width="200" alt='Logo tutorías a tu alcance' /></NavbarBrand>
                   <Collapse navbar>
                       <Nav navbar>
                       </Nav>
                       <Nav className="ml-auto" navbar>
                         <NavItem>
-                            <NavLink className="nav-link"  to='/menu' style={textStyle} ><span className="fa fa-home fa-lg"></span> Mis Cursos</NavLink>
+                            <NavLink className="nav-link"  to='/miscursos' style={textStyle} ><span className="fa fa-home fa-lg"></span> Mis Cursos</NavLink>
                         </NavItem>
                         <NavItem>
                             <NavLink className="nav-link" to='/categorias' style={textStyle} ><span className="fa fa-info fa-lg"></span> Categorías</NavLink>

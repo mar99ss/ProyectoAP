@@ -64,79 +64,79 @@ const getColor = () => {
 };
 
 export default class Home extends Component {
+
+  formato = (texto) => {
+    texto = texto.toLowerCase();
+    return texto.replace(/ /g, "");
+  };
+
   recientes = [
     {
-      title: "Factorizar",
-      text: "Matemática General",
-    },
-    {
-      title: "Tablas de verdad",
-      text: "Matemática Discreta",
+      title: "Probabilidad",
+      text: "Probabilidades",
     },
     
     {
-      title: "Recursividad",
-      text: "Introducción a la Programación",
+      title: "Modelo de cascada",
+      text: "POO",
     }
   ];
 
   matematicas = [
     {
-      title: "Matemática General",
+      title: "Probabilidades",
       text: "",
     },
     {
-      title: "Matemática Discreta",
-      text: "",
-    },
-    {
-      title: "Cálculo Diferencial e Integral",
-      text: "",
-    },
-    {
-      title: "Estadística",
+      title: "Estadistica",
       text: "",
     }
   ];
 
   programacion = [
     {
-      title: "Introducción a la Programación",
-      text: "",
-    },
-    {
-      title: "Taller de Programación",
+      title: "Estructuras de datos",
       text: "",
     },
     {
       title: "POO",
-      text: "",
-    },
-    {
-      title: "Análisis de Algoritmos",
       text: "",
     }
   ];
 
   guardados = [
     {
-      title: "División sintética",
-      text: "Matemática General",
+      title: "Analisis de relacion",
+      text: "Estadistica",
     },
     {
-      title: "Multiplicación de matrices",
-      text: "Matemática Discreta",
+      title: "Modelo de cascada",
+      text: "POO",
     },
     {
-      title: "Recursividad",
-      text: "Introducción a la Programación",
+      title: "Introduccion a los patrones de diseño",
+      text: "POO",
     }
   ];
 
-  renderCard = (card, index) => {
+  renderCardText = (card, index) => {
     return (
       <Card
-        onClick={() => history.push('/'+card.title)}
+        onClick={() => history.push('/'+this.formato(card.title+card.text))}
+        body
+        style={{borderRadius: 25, backgroundColor: getColor(), border: 0}}
+        key={index}
+      >
+        <CardTitle style={textStyle} tag="h5">{card.title}</CardTitle>
+        <CardText style={textStyle}>{card.text}</CardText>
+      </Card>
+    );
+  };
+
+  renderCardTitle = (card, index) => {
+    return (
+      <Card
+        onClick={() => history.push('/'+this.formato(card.title))}
         body
         style={{borderRadius: 25, backgroundColor: getColor(), border: 0}}
         key={index}
@@ -153,26 +153,26 @@ export default class Home extends Component {
         <br />
         <h1>Recientes</h1>
         <CardColumns>
-          {this.recientes.map(this.renderCard)}
+          {this.recientes.map(this.renderCardText)}
         </CardColumns>
         <br />
         <h1>Explorar</h1>
         <div class = 'container'>
           <h4>Matemáticas</h4>
           <CardColumns>
-            {this.matematicas.map(this.renderCard)}
+            {this.matematicas.map(this.renderCardTitle)}
           </CardColumns>
         </div>
         <div class = 'container'>
           <h4>Programación</h4>
           <CardColumns>
-            {this.programacion.map(this.renderCard)}
+            {this.programacion.map(this.renderCardTitle)}
           </CardColumns>
         </div>
         <br />
         <h1>Guardados</h1>
         <CardColumns>
-          {this.guardados.map(this.renderCard)}
+          {this.guardados.map(this.renderCardText)}
         </CardColumns>
       </div>
     );
