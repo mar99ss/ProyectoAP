@@ -75,7 +75,7 @@ export default class ListaTutoria extends Component {
                     <Card style={{borderRadius: 25}}>
                         <br/>
                         <div class = "container">
-                            <Card onClick={() => history.push('/Modelo de cascada') } style={{borderRadius: 25,backgroundColor:getColor()}}> 
+                            <Card onClick={() => history.push('/tutoriaBarco') } style={{borderRadius: 25,backgroundColor:getColor()}}> 
                                 <br/>
                                 <CardTitle style={textStyle} tag="h5">Barcos</CardTitle> 
                                 <div class = "container">

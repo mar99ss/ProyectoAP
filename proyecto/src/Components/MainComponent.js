@@ -17,6 +17,13 @@ import ListaTutoriaOrigami from "./ListaTutoriasOrigamiComponent";
 import ListaTutoriaPintura from "./ListaTutoriasPinturaComponent";
 import ListaTutoriaProb from "./ListaTutoriasProbabilidadComponent";
 import Tutoria from "./TutoriaComponent";
+import TutoriaAnalisis from "./TutoriaAnalisisComponent";
+import TutoriaBarcos from "./TutoriaBarcosComponent";
+import TutoriaOleo from "./TutoriaOleoComponent";
+import TutoriaPatron from "./TutoriaPatronesComponent";
+import TutoriaProb from "./TutoriaProbaComponent";
+import TutoriaVerbBe from "./TutoriaVerbBeComponent";
+import TutoriaVerb from "./TutoriaVerbosComponent";
 import history from './History';
 
 class Main extends Component {
@@ -112,6 +119,70 @@ class Main extends Component {
       );
     }
 
+    const TutoriaAnalisisPage=() => {
+      return(
+        <div>
+            <Header/>
+            <TutoriaAnalisis/>
+        </div>
+      );
+    }
+
+    const TutoriaBarcoPage=() => {
+      return(
+        <div>
+            <Header/>
+            <TutoriaBarcos/>
+        </div>
+      );
+    }
+
+    const TutoriaOleoPage=() => {
+      return(
+        <div>
+            <Header/>
+            <TutoriaOleo/>
+        </div>
+      );
+    }
+
+    const TutoriaPatronPage=() => {
+      return(
+        <div>
+            <Header/>
+            <TutoriaPatron/>
+        </div>
+      );
+    }
+
+    const TutoriaProbPage=() => {
+      return(
+        <div>
+            <Header/>
+            <TutoriaProb/>
+        </div>
+      );
+    }
+
+    const TutoriaVerBePage=() => {
+      return(
+        <div>
+            <Header/>
+            <TutoriaVerbBe/>
+        </div>
+      );
+    }
+
+    const TutoriaVerbosPage=() => {
+      return(
+        <div>
+            <Header/>
+            <TutoriaVerb/>
+        </div>
+      );
+    }
+    
+
     const CategoriasPage = () => {
       return (
         <div> 
@@ -176,6 +247,14 @@ class Main extends Component {
             <Route path="/listaTutoriaPintura" component={ListaTutoriaPinturaPage} />
             <Route path="/listaTutoriaProbabilidad" component={ListaTutoriaProbPage} />
             <Route path="/tutoria" component={TutoriaPage} />
+            <Route path="/tutoriaAnalisis" component={TutoriaAnalisisPage} />
+            <Route path="/tutoriaBarco" component={TutoriaBarcoPage} />
+            <Route path="/tutoriaOleo" component={TutoriaOleoPage} />
+            <Route path="/tutoriaPatron" component={TutoriaPatronPage} />
+            <Route path="/tutoriaProb" component={TutoriaProbPage} />
+            <Route path="/tutoriaVerbBe" component={TutoriaVerBePage} />
+            <Route path="/tutoriaVerbos" component={TutoriaVerbosPage} />
+
             <Redirect to="/login" />
           </Switch>
         </Router>

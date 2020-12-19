@@ -66,12 +66,12 @@ import {
   };
 
 
-  export default class ListaTutoria extends Component {
+  export default class ListaTutoriaBarco extends Component {
     render(){
         return(
             <div class="container" style={{ zIndex: 2 }}>
                 <br/>
-                <h1 class="title">Modelo de cascada</h1>
+                <h1 class="title">Barcos</h1>
                 <div class="row"> 
                 
                 
@@ -81,7 +81,7 @@ import {
                         <br/>
                         <CardTitle style={textStyle} >Publicado el 1 oct 2020</CardTitle>
                         <br/>
-                        <CardText style={textStyle} >Este es un ejemplo de como aplicar el modelo de cascada para un proyecto</CardText>
+                        <CardText style={textStyle} >Este es un ejemplo de como hacer barquitos de papel</CardText>
                     </Card>
                   </div>
                   <div class="col-6 justify-content-md-center">
@@ -96,7 +96,7 @@ import {
                       <Card style={{borderRadius: 25,backgroundColor:getColor()}} >
                         <CardTitle style={textStyle} >Publicado el 2 oct 2020</CardTitle>
                         <br/>
-                        <CardText style={textStyle} >Esta es una excelente tutoria muy bien explicada</CardText>
+                        <CardText style={textStyle} >Esta es una excelente forma de desestresarse no importa sino está llevando el curso</CardText>
                       </Card>
                     </Row>
                     <Row  >
