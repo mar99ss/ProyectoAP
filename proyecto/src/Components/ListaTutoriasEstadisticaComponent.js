@@ -75,7 +75,7 @@ export default class ListaTutoria extends Component {
                     <Card style={{borderRadius: 25}}>
                         <br/>
                         <div class = "container">
-                            <Card onClick={() => history.push('/TutoriaAnalisis') } style={{borderRadius: 25,backgroundColor:getColor()}}> 
+                            <Card onClick={() => history.push('/analisisderelacionestadistica') } style={{borderRadius: 25,backgroundColor:getColor()}}> 
                                 <br/>
                                 <CardTitle style={textStyle} tag="h5">Análisis de regresión</CardTitle> 
                                 <div class = "container">

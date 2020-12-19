@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import history from './History'
+import ReactPlayer from 'react-player'
 import {
     Card,
     CardTitle,
@@ -84,11 +85,11 @@ import {
                         <CardText style={textStyle} >Este es un ejemplo de como aplicar las formula de regresion lineal</CardText>
                     </Card>
                   </div>
-                  <div class="col-6 justify-content-md-center">
+                  <div class="col-8 justify-content-md-center">
                     <Row className="justify-content-md-center">
                       <Card style={{borderRadius: 25}} >
                         <br/>
-                        <img  style={{ maxWidth: 1000 }}  src= {video} height="200" width="500"  />
+                        <ReactPlayer url="https://www.youtube.com/watch?v=SsFBnvkoZa4" controls={true} />
                       </Card>
                     </Row>
 
@@ -97,11 +98,12 @@ import {
                         <CardTitle style={textStyle} >Publicado el 2 oct 2020</CardTitle>
                         <br/>
                         <CardText style={textStyle} >Tengo una consulta</CardText>
+                        <br/>
                       </Card>
                     </Row>
-                    <Row  >
-                      <Card style={{borderRadius: 25}} >
-                        <input
+                    <Row className="justify-content-md-center" >
+                      <br/>
+                      <input
                           style={{color:"black"}}
         
                           className=" input-control"
@@ -109,7 +111,6 @@ import {
                           name="comentario"
                           placeholder="Comentario"
                         />
-                        </Card>
                     </Row>
                     
                   </div>

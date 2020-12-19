@@ -233,25 +233,25 @@ class Main extends Component {
           <Switch>
             <Route path="/home" component={HomePage} />
             <Route path="/login" component={LoginPage} />
-            <Route path="/listatutoria" component={ListaTutoriaPage} />
+            <Route path="/poo" component={ListaTutoriaPage} />
             <Route path="/userinformation" component={UserInformationPage} />
             <Route path="/Categorias" component={CategoriasPage} />
             <Route path="/programacion" component={CursosProgramacion} />
             <Route path="/Artes" component={CursosArtes} />
             <Route path="/Lenguajes" component={CursosLenguajes} />
             <Route path="/Matematicas" component={CursosMatematicas} />
-            <Route path="/listaTutoriaAleman" component={ListaTutoriaAlemanPage} />
-            <Route path="/listaTutoriaEstadistica" component={ListaTutoriaEstadisticaPage} />
-            <Route path="/listaTutoriaIngles" component={ListaTutoriaInglesPage} />
-            <Route path="/listaTutoriaOrigami" component={ListaTutoriaOrigamiPage} />
-            <Route path="/listaTutoriaPintura" component={ListaTutoriaPinturaPage} />
-            <Route path="/listaTutoriaProbabilidad" component={ListaTutoriaProbPage} />
-            <Route path="/tutoria" component={TutoriaPage} />
-            <Route path="/tutoriaAnalisis" component={TutoriaAnalisisPage} />
+            <Route path="/aleman" component={ListaTutoriaAlemanPage} />
+            <Route path="/estadistica" component={ListaTutoriaEstadisticaPage} />
+            <Route path="/ingles" component={ListaTutoriaInglesPage} />
+            <Route path="/origami" component={ListaTutoriaOrigamiPage} />
+            <Route path="/pintura" component={ListaTutoriaPinturaPage} />
+            <Route path="/probabilidad" component={ListaTutoriaProbPage} />
+            <Route path="/modelodecascadapoo" component={TutoriaPage} />
+            <Route path="/analisisderelacionestadistica" component={TutoriaAnalisisPage} />
             <Route path="/tutoriaBarco" component={TutoriaBarcoPage} />
             <Route path="/tutoriaOleo" component={TutoriaOleoPage} />
-            <Route path="/tutoriaPatron" component={TutoriaPatronPage} />
-            <Route path="/tutoriaProb" component={TutoriaProbPage} />
+            <Route path="/introduccionalospatronesdediseñopoo" component={TutoriaPatronPage} />
+            <Route path="/probabilidadesprobabilidad" component={TutoriaProbPage} />
             <Route path="/tutoriaVerbBe" component={TutoriaVerBePage} />
             <Route path="/tutoriaVerbos" component={TutoriaVerbosPage} />
 
