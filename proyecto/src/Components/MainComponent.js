@@ -76,10 +76,10 @@ class Main extends Component {
             <Route path="/home" component={HomePage} />
             <Route path="/login" component={LoginPage} />
             <Route path="/Categorias" component={CategoriasPage} />
-            <Route path="/Programacion" component={CursosProgramacion} />
+            <Route path="/programacion" component={CursosProgramacion} />
             <Route path="/Artes" component={CursosArtes} />
             <Route path="/Lenguajes" component={CursosLenguajes} />
-            <Route path="/Matematicas" component={CursosMatematicas} />
+            <Route path="/matematicas" component={CursosMatematicas} />
             <Redirect to="/login" />
           </Switch>
         </Router>
