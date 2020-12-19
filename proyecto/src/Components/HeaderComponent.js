@@ -37,13 +37,10 @@ export default class Header extends Component {
                       </Nav>
                       <Nav className="ml-auto" navbar>
                         <NavItem>
-                            <NavLink className="nav-link"  to='/miscursos' style={textStyle} ><span className="fa fa-home fa-lg"></span> Mis Cursos</NavLink>
-                        </NavItem>
-                        <NavItem>
                             <NavLink className="nav-link" to='/categorias' style={textStyle} ><span className="fa fa-info fa-lg"></span> Categorías</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink className="nav-link"  to='/perfil' style={textStyle}><span className="fa fa-list fa-lg"></span> Perfil</NavLink>
+                            <NavLink className="nav-link"  to='/userinformation' style={textStyle}><span className="fa fa-list fa-lg"></span> Perfil</NavLink>
                         </NavItem>
                         <NavItem>
                             <NavLink className="nav-link" to='/login' style={textStyle}><img src= {log_out} height="35" width="30" alt='Logo tutorías a tu alcance' /></NavLink>

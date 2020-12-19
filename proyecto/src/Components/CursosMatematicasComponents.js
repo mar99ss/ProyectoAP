@@ -74,10 +74,16 @@ export default class Cursos extends Component {
     },
   ];
 
+  formato = (texto) => {
+    texto = texto.toLowerCase();
+    console.log(texto.replace(/ /g, ""))
+    return texto.replace(/ /g, "");
+  };
+  
   renderCard = (card, index) => {
     return (
       <Card
-        onClick={() => history.push('/Temas')}
+        onClick={() => history.push('/'+this.formato(card.title))}
         body
         style={{borderRadius: 25,backgroundColor: getColor(), border: 0}}
         key={index}

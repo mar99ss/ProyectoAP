@@ -67,13 +67,14 @@ export default class Home extends Component {
 
   formato = (texto) => {
     texto = texto.toLowerCase();
+    console.log(texto.replace(/ /g, ""))
     return texto.replace(/ /g, "");
   };
 
   recientes = [
     {
-      title: "Probabilidad",
-      text: "Probabilidades",
+      title: "Probabilidades",
+      text: "Probabilidad",
     },
     
     {
@@ -84,7 +85,7 @@ export default class Home extends Component {
 
   matematicas = [
     {
-      title: "Probabilidades",
+      title: "Probabilidad",
       text: "",
     },
     {
@@ -93,13 +94,13 @@ export default class Home extends Component {
     }
   ];
 
-  programacion = [
+  artes = [
     {
-      title: "Estructuras de datos",
+      title: "Pintura",
       text: "",
     },
     {
-      title: "POO",
+      title: "Origami",
       text: "",
     }
   ];
@@ -164,9 +165,9 @@ export default class Home extends Component {
           </CardColumns>
         </div>
         <div class = 'container'>
-          <h4>Programación</h4>
+          <h4>Artes</h4>
           <CardColumns>
-            {this.programacion.map(this.renderCardTitle)}
+            {this.artes.map(this.renderCardTitle)}
           </CardColumns>
         </div>
         <br />

@@ -69,22 +69,13 @@ export default class UserInformation extends Component {
                                 <label for="name">Informacion Personal</label> 
                             </div>   
                             <div class="row " >
-                                <label for="estudia">Estudia en </label>   
-                                <div class ="d-flex justify-content-end">
-                                    <label for="name">Tecnologico de Costa Rica </label> 
-                                </div>
+                                <label for="estudia">Estudia en Tecnologico de Costa Rica </label> 
                             </div>
                             <div class="row  ">
-                                <label for="correo">Correo:</label>
-                                <label for="name">jane@example</label> 
+                                <label for="correo">Correo: jane@example</label> 
                             </div>
                             <div class="row  ">
-                                <label for="carné">Carné</label>
-                                <label for="name">2017424546</label> 
-                            </div>
-                            <div class="row  ">
-                                <label for="calificacion">Calificacion</label>
-                                <label for="name">4</label> 
+                                <label for="carné">Carné 2017424546</label> 
                             </div>
                         </div>
                     </div>
