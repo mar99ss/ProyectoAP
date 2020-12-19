@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Button, Form, FormGroup, Media } from "reactstrap";
 import { BsEnvelope, BsLock } from "react-icons/bs"; 
 import Background from "./backgroundLogin.png";
+import logo from './logo_header.png'
  
 const login = {
   width: "100%",
@@ -78,7 +79,8 @@ export default class Login extends Component {
             <div className="col-6 d-flex align-items-center justify-content-center">
               <Media>
                 <Media left middle>
-                  <Media object src="/images/logo.png " />
+                  <Media object src={logo} />
+
                 </Media>
               </Media>
               
