@@ -75,9 +75,9 @@ export default class ListaTutoria extends Component {
                     <Card style={{borderRadius: 25}}>
                         <br/>
                         <div class = "container">
-                            <Card onClick={() => history.push('/Modelo de cascada') } style={{borderRadius: 25,backgroundColor:getColor()}}> 
+                            <Card onClick={() => history.push('/tutoriaOleo') } style={{borderRadius: 25,backgroundColor:getColor()}}> 
                                 <br/>
-                                <CardTitle style={textStyle} tag="h5">Modelo de cascada</CardTitle> 
+                                <CardTitle style={textStyle} tag="h5">Oleo</CardTitle> 
                                 <div class = "container">
                                     <Card style={{borderRadius: 25}}>
                                         <CardText style={textStyle} >Jane Foster</CardText>
@@ -86,16 +86,6 @@ export default class ListaTutoria extends Component {
                                 <br/>
                             </Card>
                             <br/>
-                            <Card  style={{borderRadius: 25,backgroundColor:getColor()}}> 
-                                <br/>
-                                <CardTitle style={textStyle} tag="h5">Introduccion a los patrones de diseño</CardTitle> 
-                                <div class = "container">
-                                    <Card style={{borderRadius: 25}}>
-                                        <CardText style={textStyle} >Jane Foster</CardText>
-                                    </Card>
-                                </div>
-                                <br/>
-                            </Card>
                         </div>
                         <br/>
                     </Card>
