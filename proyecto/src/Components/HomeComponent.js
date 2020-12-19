@@ -66,31 +66,19 @@ const getColor = () => {
 export default class Home extends Component {
   recientes = [
     {
-      title: "Factorizar",
-      text: "Matemática General",
-    },
-    {
-      title: "Tablas de verdad",
-      text: "Matemática Discreta",
+      title: "Probabilidad",
+      text: "Probabilidades",
     },
     
     {
-      title: "Recursividad",
-      text: "Introducción a la Programación",
+      title: "Modelo de cascada",
+      text: "POO",
     }
   ];
 
   matematicas = [
     {
-      title: "Matemática General",
-      text: "",
-    },
-    {
-      title: "Matemática Discreta",
-      text: "",
-    },
-    {
-      title: "Cálculo Diferencial e Integral",
+      title: "Probabilidades",
       text: "",
     },
     {
@@ -101,35 +89,27 @@ export default class Home extends Component {
 
   programacion = [
     {
-      title: "Introducción a la Programación",
-      text: "",
-    },
-    {
-      title: "Taller de Programación",
+      title: "Estructuras de datos",
       text: "",
     },
     {
       title: "POO",
-      text: "",
-    },
-    {
-      title: "Análisis de Algoritmos",
       text: "",
     }
   ];
 
   guardados = [
     {
-      title: "División sintética",
-      text: "Matemática General",
+      title: "Análisis de relación",
+      text: "Estadística",
     },
     {
-      title: "Multiplicación de matrices",
-      text: "Matemática Discreta",
+      title: "Modelo de cascada",
+      text: "POO",
     },
     {
-      title: "Recursividad",
-      text: "Introducción a la Programación",
+      title: "Introducción a los patrones de diseño",
+      text: "POO",
     }
   ];
 
